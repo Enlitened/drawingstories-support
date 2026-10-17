@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drawing Stories — Support</title>
+<meta name="description" content="Drawing Stories turns a photo of your child's drawing into a bedtime story starring their character.">
+<link rel="icon" href="icon-256.png">
+<style>
+  :root {
+    --ground: #f6f4fb; --surface: #ffffff; --ink: #1c1830;
+    --muted: #5d5873; --line: #e2deec; --accent: #6b4fc8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #15122a; --surface: #1f1a3a; --ink: #f4eedd;
+      --muted: #b4accb; --line: #2f2852; --accent: #ffc94d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font: 16px/1.65 ui-sans-serif, -apple-system, system-ui, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 72px 24px 96px; }
+  h1 { font-size: 2.2rem; letter-spacing: -.02em; margin: 0 0 6px; }
+  h2 { font-size: 1.15rem; margin: 40px 0 8px; }
+  p { margin: 0 0 14px; }
+  p.lede { color: var(--muted); font-size: 1.05rem; margin-bottom: 20px; }
+  a { color: var(--accent); }
+  ol, ul { margin: 0 0 14px; padding-left: 22px; color: var(--muted); }
+  li { margin-bottom: 6px; }
+  dt { font-weight: 600; margin-top: 22px; }
+  dd { margin: 4px 0 0; color: var(--muted); }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px 24px; margin: 28px 0 0; }
+  .icon { width: 96px; height: 96px; border-radius: 22px; display: block; margin-bottom: 24px; }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="icon-256.png" alt="">
+  <h1>Drawing Stories</h1>
+  <p class="lede">Take a photo of your child's drawing, answer three questions together, and get a bedtime story starring their character, ready to read aloud.</p>
+
+  <div class="card">
+    <p><strong>Need help?</strong> Email <a href="mailto:csergay@gmail.com">csergay@gmail.com</a>. Please say which iPhone or iPad you're using and what you see on screen. Leave your child's drawing out of any screenshot if you'd rather keep it private.</p>
+  </div>
+
+  <h2>Getting started</h2>
+  <ol>
+    <li>Add your child's nickname.</li>
+    <li>Take a photo of one of their drawings, flat and in good light, or choose one from Photos.</li>
+    <li>Answer the three questions together, typed or spoken, then tap <strong>Make the character</strong>.</li>
+    <li>Tap <strong>New story</strong> and read it together at bedtime.</li>
+  </ol>
+
+  <h2>Questions</h2>
+  <dl>
+    <dt>Which devices does it work on?</dt>
+    <dd>An iPhone or iPad that supports Apple Intelligence (iPhone 15 Pro or newer) on iOS 27, with Apple Intelligence turned on in Settings.</dd>
+    <dt>What is "Write stories with Claude"?</dt>
+    <dd>An optional writer by Anthropic that writes richer stories. It's off until a parent turns it on in Settings › Story writer and agrees to the consent screen. Only text is sent, never the drawing. See the <a href="privacy.html">Privacy Policy</a>.</dd>
+    <dt>Plans and free trials</dt>
+    <dd>Your first 3 stories are free, then one a week. Plus (45 new stories a month), Family (120, for up to 4 children, with Family Sharing) and Storyteller (250) are monthly or yearly subscriptions; Plus and Family start with 7 days free. Rereading a saved story never uses one. Manage or cancel in Settings › your name › Subscriptions.</dd>
+    <dt>Keeping drawings on more than one device</dt>
+    <dd>Turn on iCloud Sync in the app's Settings. Your drawings and stories are kept in your family's own iCloud, which we can't see.</dd>
+  </dl>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> · © 2026 Colin Sergay
+  </footer>
+</main>
+</body>
+</html>
