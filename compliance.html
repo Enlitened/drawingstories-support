@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drawing Stories — Compliance</title>
+<meta name="description" content="How Drawing Stories meets children&rsquo;s privacy law and responsible-AI requirements.">
+<link rel="icon" href="icon-256.png">
+<style>
+  :root {
+    --ground: #f6f4fb; --surface: #ffffff; --ink: #1c1830;
+    --muted: #5d5873; --line: #e2deec; --accent: #6b4fc8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #15122a; --surface: #1f1a3a; --ink: #f4eedd;
+      --muted: #b4accb; --line: #2f2852; --accent: #ffc94d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font: 16px/1.65 ui-sans-serif, -apple-system, system-ui, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 72px 24px 96px; }
+  h1 { font-size: 2.2rem; letter-spacing: -.02em; margin: 0 0 6px; }
+  h2 { font-size: 1.15rem; margin: 40px 0 8px; }
+  p { margin: 0 0 14px; }
+  p.lede { color: var(--muted); font-size: 1.05rem; margin-bottom: 20px; }
+  a { color: var(--accent); }
+  ol, ul { margin: 0 0 14px; padding-left: 22px; color: var(--muted); }
+  li { margin-bottom: 6px; }
+  dt { font-weight: 600; margin-top: 22px; }
+  dd { margin: 4px 0 0; color: var(--muted); }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px 24px; margin: 28px 0 0; }
+  .icon { width: 96px; height: 96px; border-radius: 22px; display: block; margin-bottom: 24px; }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Compliance statement</h1>
+  <p class="lede">Last updated 21 October 2026</p>
+
+  <p>Drawing Stories turns a photo of a child's drawing into a bedtime story. It is made for parents and other grown-ups to use with children aged about 3 to 8. This page sets out the rules we follow and how the app meets them.</p>
+
+  <h2>Who uses the app</h2>
+  <ul>
+    <li>A grown-up sets the app up and reads the stories aloud. Children answer questions about their drawing with a grown-up; they never chat with an AI.</li>
+    <li>Settings, sharing, deleting and purchases sit behind a parental check (press and hold). Turning on cloud stories, the only way a child's answers reach a third-party AI, also asks a grown-up to answer a question a young child can't.</li>
+    <li>The app has no accounts, no sign-in, no advertising, no analytics and no tracking.</li>
+  </ul>
+
+  <h2>Children's privacy</h2>
+  <p>We design the app to meet children's privacy law where it is offered, including the US Children's Online Privacy Protection Act (COPPA), the Australian Privacy Act 1988 and the Children's Online Privacy Code being made under it, and the UK and EU GDPR. In practice:</p>
+  <ul>
+    <li>Drawings, voice recordings, children's profiles and the story library stay on the device, or in the family's own iCloud if a parent turns on sync.</li>
+    <li>Story text leaves the device only to be written into a story: to Apple's Private Cloud Compute, or, if a parent chooses cloud stories after being told exactly what is sent, through our story server to Anthropic. Names of people and places in the answers are swapped out first where the app can find them.</li>
+    <li>Our server keeps none of the story text. Anthropic doesn't train on it and keeps it only for a limited time for safety checks.</li>
+    <li>Parents can switch cloud stories off, and delete any story, child or everything, at any time.</li>
+  </ul>
+  <p>The <a href="privacy.html">Privacy Policy</a> lists everything the app sends and keeps.</p>
+
+  <h2>Responsible AI</h2>
+  <p>Cloud stories are written by Anthropic's Claude under Anthropic's <a href="https://www.anthropic.com/legal/aup">Usage Policy</a> and its <a href="https://support.claude.com/en/articles/9307344">Guidelines for Organizations Serving Minors</a>. Other stories are written by Apple Intelligence. For every story:</p>
+  <ul>
+    <li><strong>Disclosure.</strong> Parents are told stories are written by AI, and which partner writes them, before choosing a writer.</li>
+    <li><strong>Consent and an age check.</strong> Cloud stories are off until a grown-up turns them on and answers the grown-up question.</li>
+    <li><strong>Safety instructions.</strong> Every cloud request carries child-safety rules, added on our server, that rule out romantic, sexual, frightening or secretive content.</li>
+    <li><strong>Automated checks.</strong> Every story is checked automatically before it is shown, and rewritten or replaced if it fails.</li>
+    <li><strong>Reporting.</strong> Parents can report any story from the app or by email. We reply within two days and use reports to change how stories are written and checked; anything harmful is handled the same day. See <a href="safety.html#report">how to report a story</a>.</li>
+    <li><strong>Guidance.</strong> A <a href="safety.html">safety guide</a> for families, in the app and here.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Questions about this statement, or a concern about a story: <a href="mailto:csergay@gmail.com">csergay@gmail.com</a>.</p>
+
+  <footer>
+    <a href="index.html">Support</a> · <a href="safety.html">Using it safely</a> · <a href="compliance.html">Compliance</a> · <a href="privacy.html">Privacy Policy</a> · © 2026 Colin Sergay
+  </footer>
+</main>
+</body>
+</html>
